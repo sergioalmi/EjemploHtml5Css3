@@ -1,0 +1,211 @@
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    header {
+        background: skyblue;
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 3rem;
+    }
+    header img:nth-child(1){
+        display: none;
+    }
+    header img:nth-child(3){
+        display: none;
+    }
+    nav, nav ul{
+        width: 400px;
+    }
+    nav ul li{
+        width: 200px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 400px;
+    }
+    section, section article{
+        width: 400px;
+    }
+    div#Contacto{
+        flex-direction: column;
+    }   
+    div#Contacto > fieldset > form > div{
+        flex-direction: column;
+    }
+
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    header {
+        background: orange; 
+        flex-direction: column;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header img:nth-child(1){
+        display: none;
+    }
+    header img:nth-child(3){
+        display: none;
+    }
+    nav, nav ul{
+        width: 400px;
+    }
+    nav ul li{
+        width: 200px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 400px;
+    }
+    section, section article{
+        width: 400px;
+    }
+    div#Contacto > fieldset > form > div{
+        flex-direction: column;
+    }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    header {
+        background: rgb(255, 0, 255); 
+        flex-direction: row;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header img:nth-child(1){
+        display: flex;
+    }
+    header img:nth-child(3){
+        display: none;
+    }
+    nav, nav ul{
+        width: 400px;
+    }
+    nav ul li{
+        width: 200px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 400px;
+    }
+    section, section article{
+        width: 400px;
+    }
+    div#Contacto > fieldset > form > div{
+        flex-direction: row;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    header {
+        background: green; 
+        flex-direction: row;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header img:nth-child(1){
+        display: none;
+    }
+    header img:nth-child(3){
+        display: flex;
+    }
+    nav, nav ul{
+        width: 800px;
+    }
+    nav ul li{
+        width: 160px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 160px;
+    }
+    section, section article{
+        width: 800px;
+    }
+    div#Contacto{
+        flex-direction: row;
+    }
+    div#Contacto > fieldset{
+        flex: 4;
+    }
+    div#Contacto > span{
+        flex: 1;
+    }    
+    div#Contacto > fieldset > form > div{
+        flex-direction: row;
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    header {
+        background: rgb(85, 85, 255); 
+        flex-direction: row;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header img:nth-child(1){
+        display: flex;
+    }
+    header img:nth-child(3){
+        display: flex;
+    }
+    nav, nav ul{
+        width: 800px;
+    }
+    nav ul li{
+        width: 160px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 160px;
+    }
+    section, section article{
+        width: 800px;
+    }
+    div#Contacto{
+        flex-direction: row;
+    }
+    div#Contacto > fieldset{
+        flex: 3;
+    }
+    div#Contacto > span{
+        flex: 1;
+    }    
+    div#Contacto > fieldset > form > div{
+        flex-direction: row;
+    }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    header {
+        background: #ccc; 
+        flex-direction: row; 
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header img:nth-child(1){
+        display: flex;
+    }
+    header img:nth-child(3){
+        display: flex;
+    }
+    nav, nav ul{
+        width: 800px;
+    }
+    nav ul li{
+        width: 160px;
+    }
+    nav ul li:last-child{ /*Ultimo elemento*/
+        width: 160px;
+    }
+    section, section article{
+        width: 800px;
+    }
+    div#Contacto{
+        flex-direction: row;
+    }
+    div#Contacto > fieldset{
+        flex: 3;
+    }
+    div#Contacto > span{
+        flex: 2;
+    }      
+    div#Contacto > fieldset > form > div{
+        flex-direction: row;
+    }   
+} 

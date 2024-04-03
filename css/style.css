@@ -1,0 +1,164 @@
+header{
+    display: flex;/*Hace que los elementos se alineen en una sola linea*/
+    justify-content: space-around;/*Separa los elementos*/
+    align-items: center;/*Centra verticalmente*/
+}
+/*Transicion de la imagen*/
+header img{
+    height: 100px;/*Altura de la imagen*/
+    /*flex: 1;Flex es el peso que tiene cada elemento A menor peso menor espacio*/
+    transition: 5s all ease-in-out;/*Transicion de 1 segundo para todos los elementos*/  
+    display: flex;   
+}
+header img:hover{
+    transform: rotate(360000deg);/*Rota la imagen*/
+}
+/*Fin transicion de la imagen*/
+header h1{
+    /*flex: 3;Flex es el peso que tiene cada elemento A mayor peso mayor espacio*/
+    text-align: center;/*Centra horizontalmente*/
+    animation: Rebote 2s ease 0s 1 normal forwards; /*Animacion*/
+}
+header img:nth-child(3){
+    border-radius: 80px;/*Borde redondeado*/
+    display: flex;/*Hace que los elementos se alineen en una sola linea*/
+}
+header img:nth-child(1){
+    display: flex;/*Hace que los elementos se alineen en una sola linea*/
+}
+nav{
+    width: 800px; /*Ancho del menu*/
+    margin: 20px auto; /*Centra horizontal*/
+    padding: 0%;/*quitar padding*/
+}
+nav ul{
+    width: 800px;
+    margin: 0px;
+    padding: 0%;
+    height: 30px;
+    background: #ccc;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    width: 160px;
+    height: 30px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: black;
+    background: white;
+    transition: 0.2 all ease-in-out;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li:hover{
+    background: black;
+    color: white;
+}
+nav ul li:hover a{
+    color: white;
+}
+/*estilo para la seccion de nosotrxs*/
+section{
+    clear: left;
+    width: 800px;
+    margin: 10px auto;
+}
+section article{
+    width: 800px;
+}
+section article p{
+    width: 380px;
+    padding: 10px;
+    text-align: justify;
+    float: left;
+}
+section article p:nth-child(odd){
+    background-color: skyblue;
+}
+section#Servicios article{
+    padding: 10px 0px;
+    text-align: justify; 
+}
+section#Servicios article:nth-child(even){
+    background-color: rgba(red, green, blue, alpha,0.7); /*color transparente*/
+}
+section#Servicios article:nth-child(odd){
+    background-color:skyblue;
+}
+.subtitulo{
+    clear: both ;
+    display: flex;
+    padding: 10px;
+    font-size: 2rem;   
+    text-shadow: 3px 3px 4px #ccc;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+div#Contacto{
+    clear: both;
+    display: flex;
+}
+div#Contacto span{
+    flex: 2;
+}
+div#Contacto fieldset{
+    flex: 3;
+}
+div#Contacto > fieldset > form > div{
+    display: flex;
+    margin: 10px 0;
+}
+div#Contacto > fieldset > form > div > label{
+    flex: 1;
+}
+div#Contacto > fieldset > form > div > input{
+    flex: 4;
+}
+div#Contacto > fieldset > form > div:nth-child(3){
+    flex-direction: column;
+    display: flex;
+}
+section#Galeria span{
+    width: 200px;
+    float: left;
+}
+section#Galeria span:first-child{
+    width: 200px;
+}
+section#Galeria span:first-child img{
+    width: 200px;
+    height: 150px;
+}
+section#Galeria span:last-child{
+    width: 600px;
+}
+section#Galeria span:last-child img{
+    width: 600px; /*ancho*/
+    height: 610px; /*altura*/
+    position: absolute;/*se unan las fotos*/
+    z-index: 1; /*vaya cambiando de fotos al clickar*/
+    transition: 0.5s all ease-in-out; /*duracion transicion*/
+    opacity:0; /*aparezca con 0 opacidad*/
+}
+section#Galeria span:last-child img:target{
+    transform: rotateZ(360deg); /*de vueltas*/
+    opacity: 1;
+    z-index: 99; /*vaya cambiando de fotos al clickar*/
+}
+footer{
+    clear: both;
+    /*lo primero que tenemos que limpiar el posicionamiento del flotante*/
+    display: flex;
+    height: 40px;
+    background: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
